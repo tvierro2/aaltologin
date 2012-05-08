@@ -1,0 +1,115 @@
+/***	Aalto University
+ ***	@Miikka Roine 2010 */
+body {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+p {
+	font-size:11px;
+}
+td {
+	font-size:11px;
+}
+a  {
+	color: #007acc; 
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+	
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+div.mainwrapper {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+input.txt{
+	color:#000000;
+	background-color:#fff3c0;
+	border: 1px solid #a4a4a4;
+	margin: 3px 6px;
+	width:200px;
+}
+input.btn{
+	width:50px;
+}	
+#loginbox {
+	display:block;
+	text-align:left;
+	margin-top:50px;
+	font-family:Tahoma,Arial,Helvetica;
+	width:755px;
+}
+#top {
+	display:block;
+	background-image: url('images/lgntopl.gif');
+	background-repeat: no-repeat;	
+	width: 755px;
+	height: 135px;
+}
+#inside {
+	display: block;
+	background-image: url('images/center.gif');
+	background-repeat: repeat-y;
+	font-size:11px;
+	min-height: 200px;
+	padding-left: 35px;
+	padding-right: 50px;
+	padding-top:20px;
+	padding-bottom:15px;
+}
+#introtext {
+	background:none;
+	display: block;
+	color: #a39894;
+	font-family: Times;
+	font-size:18px;
+	padding-top:80px;
+	padding-left:35px;
+	padding-right:200px;
+	padding-bottom:5px;
+}
+#infotext {
+	background:none;
+	font-size:11px;
+	height:auto;
+	padding-top:0px;
+	padding-bottom: 5px;
+	padding-right:22px;
+}
+
+#infotext h2 {
+	color:#ff9933;
+	font-weight:bold;
+	font-size: 14px;
+	margin-top:0px;
+	margin-bottom:5px;
+	padding-bottom:0px;
+	border-top: solid 9px #ff9933;
+}
+
+#login {
+	padding-top:10px;
+	font-size: 11px;
+}
+#bottom {
+	display: block;
+	background-image: url('images/bottom.gif');
+	background-repeat: no-repeat;
+	width: 755px;
+	height: 90px;
+}
+#bottomtext {
+	background: none;
+	display: block;
+	font-size: 11px;
+	padding-top: 15px;
+	color:#FFF;
+	font-weight:bold;
+	padding-left: 35px;
+	text-align: left;
+}

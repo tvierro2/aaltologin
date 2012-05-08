@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+    <meta name="Robots" content="NOINDEX, NOFOLLOW">
+    <title>Aalto University Login Page - devel.idp.aalto.fi</title>
+
+    <link type="text/css" rel="stylesheet" href="idp.css">
+  </head>
+
+  <body onload="document.query.j_username.focus()">
+    <center>
+      <!-- New Template for Aalto University Login Page by Miikka Roine -->
+      <div id="mainwrapper">
+        <div id="loginbox">
+          <div id="top">
+
+            <!-- Basic information about login -->
+            <div id="introtext">
+              Aalto University IT Services<br />
+              Shibboleth Authentication Services.
+            </div>
+          </div>
+          <div id="inside">
+            <!-- Infotext element for dynamic information about the Service -->
+            <div id="infotext">
+
+              <h2>Login with Aalto username</h2>
+              Use your Aalto username and password to login.<br />
+              More Service Information from <a href="https://inside.aalto.fi/">Aalto Inside</a> (requires authentication)
+
+            </div>
+            <!-- Errortext element for dynamic login errors -->
+            <div id="errortext">
+
+            </div>
+            <!-- login element for login inputs -->
+            <div id="login">
+
+
+              <form name="query" action="/idp/Authn/Kerberos" method="post">
+
+                <table>
+                  <tbody>
+                    <tr>
+
+                      <td>Username:</td>
+                      <td><input class="txt" name="j_username" type="text" autocapitalize="off" tabindex="1" /></td>
+                    </tr>
+                    <tr>
+                      <td>Password:</td>
+                      <td><input class="txt" name="j_password" type="password" tabindex="2" /></td>
+                    </tr>
+                    <tr>
+
+                      <td><br /></td>
+                      <td><input type="submit" class="btn" value="Login" tabindex="3" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <p><a href="https://cardan.aalto.fi/privacypolicy/?providerID=https://test4ever.hut.fi/shibboleth" target="_blank">Please review the privacy policy description of the target site.</a></p>
+                        <input type="checkbox" name="uApprove.consent-revocation" value="true" />
+                        Reset my attribute release approvals
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+
+            </div>
+          </div>
+          <div id="bottom">
+            <!-- Bottomtext element for copyright information etc. -->
+
+            <div id="bottomtext">
+              &copy; Copyright Aalto University 2010
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

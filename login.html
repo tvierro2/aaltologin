@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+    <meta name="Robots" content="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="initial-scale = 1.0" />
+    <title>Aalto University Login Page</title>
+    <link type="text/css" rel="stylesheet" href="idp.css">
+  </head>
+  <body>
+    <div id="loginbox">
+      <div id="top">
+	<div id="header">
+	  <h1 id="logo">Aalto University</h1>	
+	  <p class="introtext">Aalto University IT Services</p>
+	  <p class="introtext">Shibboleth Authentication Services.</p>
+	</div>
+      </div>
+      <div id="inside">
+	<!-- Infotext element for dynamic information about the Service -->
+	<div id="infotext">
+	  <h2>Login with Aalto username</h2>
+	  <p>Use your Aalto username and password to login.</p>
+	  <p>More Service Information from <a href="https://inside.aalto.fi/">Aalto Inside</a> (requires authentication)</p>
+	</div>
+	<!-- Errortext element for dynamic login errors -->
+	<div id="errortext"></div>
+	<!-- login element for login inputs -->
+	<form name="query" action="javascript:alert('This is only a demo. The form does not submit anything.')" method="post">
+	  <!--form name="query" action="/idp/Authn/Kerberos" method="post"-->
+	  <div id="login">
+	    <label class="text-label" id="username-label" for="username">Username:</label>
+	    <input class="txt" id="username" name="j_username" type="text" tabindex="1" placeholder="Username" required="required" autocomplete="on" autofocus="autofocus" />
+	    <label class="text-label" id="password-label" for="password">Password:</label>
+	    <div id="submit-wrapper">
+	      <input class="txt" id="password" name="j_password" type="password" tabindex="2" placeholder="Password" required="required" />
+	      <input type="submit" class="btn" id="submit" value="Login" tabindex="3" />
+	    </div>
+	    <div class="clear"></div>
+	  </div>
+	  <p><a href="https://cardan.aalto.fi/privacypolicy/?providerID=https://test4ever.hut.fi/shibboleth" target="_blank">Please review the privacy policy description of the target site.</a></p>
+	  <div>
+	    <input type="checkbox" name="uApprove.consent-revocation" value="true" id="reset"/>
+	    <label class="checkbox-label" for="reset">Reset my attribute release approvals</label>
+	    <div class="clear"></div>
+	  </div>
+	</form>
+      </div>
+      <div id="bottom">
+	<!-- Bottomtext element for copyright information etc. -->
+	<div id="bottomtext">
+	  <p>&copy; Copyright Aalto University 2012</p>
+	</div>
+      </div>
+    </div>
+    <script>
+	// Custom attribute for mobile Safari 
+	document.getElementById('username').setAttribute('autocapitalize', 'off');
+
+	// Autofocus for non-HTML5-browsers
+	document.getElementById('username').focus();
+
+	// If input support placeholder, add class to form
+	if ( 'placeholder' in document.createElement('input') ) {
+	  document.getElementById('login').className = 'hasPlaceholder';
+	}
+
+
+	// Randomly display Aalto-logo by setting class to logo
+	switch (Math.floor(Math.random()*4)) {
+	case 0:
+          document.getElementById('logo').className = 'exlamation-mark';
+          break;
+	case 1:
+          document.getElementById('logo').className = 'question-mark';
+          break;
+	case 2:
+          document.getElementById('logo').className = 'quotation-mark';
+          break;
+	default:
+      }
+    </script>
+  </body>
+</html>
