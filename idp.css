@@ -158,30 +158,43 @@ input#reset {
     }
 } 
 @media all and (max-width: 350px), (max-height: 320px) {
+    html { 
+	height: 100%; 
+    }
     body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
     }
     #loginbox {
+	height: auto;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	border-radius: 0;
 	box-shadow: none;
 	width: 100%;
+	position: relative;
     }
     #bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	border-radius: 0;
     }
     #top {
+	padding-top: 15px;
 	margin: 0 20px;
     }
     #inside {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0 20px 90px 20px;
     }
     #header {
 	padding-bottom: 0px;
+    }
+    #logo {
+	margin-top: 0;
     }
     .introtext {
 	display: none;
