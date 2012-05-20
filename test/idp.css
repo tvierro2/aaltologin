@@ -1,0 +1,238 @@
+/** Aalto University */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a  {
+    color: #007acc; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+}	
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+#loginbox {
+    display: block;
+    margin: 56px auto;
+    min-width: 202px;
+    font-family: Tahoma, Arial, Helvetica;
+    max-width: 728px;
+    border: 1px solid #aaacae;
+    border-radius: 10px;
+    box-shadow: 6px 4px 8px #aaa;
+}
+input.txt{
+    display: block;
+    float: left;
+    color: #000;
+    background-color: #fff3c0;
+    border: 1px solid #a4a4a4;
+    margin-bottom: 10px;
+    width: 200px;
+}
+input.btn {
+    margin-bottom: 12px;
+}
+.text-label {
+    display: block;
+    float: left;
+    width: 6em;
+    line-height: 2em;
+}
+input#reset {
+    display: block;
+    float: left;
+}
+.checkbox-label {
+    display: block;
+    float: left;
+    line-height: 20px;
+    margin-left: 4px;
+}
+#submit-wrapper {
+    float: left;
+    width: 202px;
+}
+#top {
+    display: block;
+    background-image: url('images/decorative.gif');
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+#logo {
+    text-indent: -9999px;
+    height: 47px;
+    width: 191px;
+    background: url('images/logo/Aalto_EN_13_RGB_1.jpg') no-repeat left top;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+#logo.exlamation-mark {
+    background-image: url('images/logo/Aalto_EN_13_RGB_1.jpg');
+}
+#logo.question-mark {
+    background-image: url('images/logo/Aalto_EN_13_RGB_2.jpg');
+}
+#logo.quotation-mark {
+    background-image: url('images/logo/Aalto_EN_13_RGB_3.jpg');
+}
+#inside {
+    display: block;
+    font-size: 11px;
+    min-height: 200px;
+    padding-left: 31px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+#header {
+    background-color: #fff;
+    max-width: 260px;
+    padding-bottom: 30px;
+}
+.introtext {
+    color: #a39894;	
+    font-family: Times;
+    font-size: 18px;
+    margin: 0;
+}
+#infotext {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+#infotext h2 {
+    color: #ff9933;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    border-top: solid 9px #ff9933;
+}
+#infotext p {
+    margin: 0;
+}
+#login {
+    max-width: 280px;
+    margin: 10px 0;
+}
+#bottom {
+    display: block;
+    height: 90px;
+    background-color: #ff9933;
+    border-radius: 0 0 10px 10px;
+}
+#bottomtext {
+    background: none;
+    background-color: #ff9933;
+    display: block;
+    font-size: 11px;
+    padding-top: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 35px;
+    text-align: left;
+}
+.clear { clear: both; }
+
+@media all and (max-height: 588px) {
+    #loginbox {
+	margin: 0 auto;
+    }
+} 
+@media all and (max-height: 320px) {
+    #header {
+	padding-bottom: 0px;
+    }
+    .introtext {
+	display: none;
+    }
+}
+@media all and (max-width: 480px), (max-height: 320px) {
+    #top {
+	background: none;
+    }
+} 
+@media all and (max-width: 350px), (max-height: 320px) {
+    html { 
+	height: 100%; 
+    }
+    body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    }
+    #loginbox {
+	height: auto;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	width: 100%;
+	position: relative;
+    }
+    #bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-radius: 0;
+    }
+    #top {
+	padding-top: 15px;
+	margin: 0 20px;
+    }
+    #inside {
+	padding: 0 20px 90px 20px;
+    }
+    #header {
+	padding-bottom: 0px;
+    }
+    #logo {
+	margin-top: 0;
+    }
+    .introtext {
+	display: none;
+    }
+    .hasPlaceholder label {
+	display: none;
+    }
+    .hasPlaceholder input.txt {
+	height: 24px;
+	width: 100%;
+    }
+    .hasPlaceholder input.btn {
+	height: 36px;
+	width: 100%;
+    }
+    #submit-wrapper {
+	width: 100%;
+    }
+} 
+@media all and (min-width: 400px) and (max-height: 240px) {
+    #logo {
+	background-image: url('images/logo/Aalto_EN_21_RGB_1.jpg');
+	width: 75px;
+	height: 60px;
+    }
+    #logo.exlamation-mark {
+	background-image: url('images/logo/Aalto_EN_21_RGB_1.jpg');
+    }
+    #logo.question-mark {
+	background-image: url('images/logo/Aalto_EN_21_RGB_3.jpg');
+    }
+    #logo.quotation-mark {
+	background-image: url('images/logo/Aalto_EN_21_RGB_2.jpg');
+    }
+    #top {
+	margin-bottom: -70px;
+    }
+    #inside {
+	padding-left: 110px;
+    }
+}
